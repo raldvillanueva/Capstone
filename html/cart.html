@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cart</title>
+  <link rel="stylesheet" href="../css/cart.css">
+  <script src="../js/cart.js" defer></script>
+</head>
+<body>
+
+<!-- ✅ BACK NAV (FIXED) -->
+<nav class="nav" onclick="goBack()">
+  <div class="back-wrap">
+    <span class="arrow"></span>
+    <span>Back</span>
+  </div>
+</nav>
+
+<div class="cart-container">
+  <div class="items" id="cart-items"></div>
+
+  <div class="summary">
+    <h3>Order Summary</h3>
+    <p>Subtotal: ₱<span id="subtotal">0</span></p>
+    <p>Delivery: ₱50</p>
+    <h2>Total: ₱<span id="total">0</span></h2>
+    <button onclick="goToCheckout()">Checkout</button>
+  </div>
+
+  <div id="msg" class="msg"></div>
+
+</div>
+
+</body>
+</html>

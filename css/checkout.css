@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+body {
+  margin: 0;
+  background: #0f0f0f;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* 🔥 GLOBAL BACK NAV (USED IN BOTH PAGES) */
+.nav {
+  padding: 20px 60px;
+  background: rgba(0,0,0,0.8);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+/* BACK WRAP */
+.back-wrap {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: 0.3s;
+}
+
+/* ARROW ICON */
+.arrow {
+  width: 10px;
+  height: 10px;
+  border-left: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  transform: rotate(45deg);
+  transition: 0.3s;
+}
+
+/* TEXT */
+.nav h2 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* HOVER EFFECT */
+.nav:hover {
+  color: #ff4d94;
+}
+
+.nav:hover .arrow {
+  border-color: #ff4d94;
+  transform: translateX(-4px) rotate(45deg);
+}
+
+/* 🔥 CONTAINERS */
+.cart-container,
+.checkout-container {
+  display: flex;
+  gap: 40px;
+  padding: 40px 60px;
+}
+
+/* ITEMS */
+.items {
+  flex: 2;
+}
+
+.item {
+  display: flex;
+  background: #1a1a1a;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.item img {
+  width: 120px;
+  object-fit: cover;
+}
+
+.item-info {
+  padding: 15px;
+}
+
+/* SUMMARY (USED BOTH) */
+.summary {
+  flex: 1;
+  background: #1a1a1a;
+  padding: 25px;
+  border-radius: 15px;
+}
+
+/* BUTTONS */
+.summary button,
+.form button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg,#ff4d94,#ff758c);
+  border: none;
+  color: white;
+  border-radius: 10px;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.summary button:hover,
+.form button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(255,77,148,0.3);
+}
+
+/* CONTROLS */
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.controls button {
+  background: #ff4d94;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.remove {
+  background: transparent;
+  color: red;
+  border: none;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+/* FORM */
+.form {
+  flex: 1;
+  background: #1a1a1a;
+  padding: 25px;
+  border-radius: 15px;
+}
+
+.form input,
+.form select {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 8px;
+}
+
+.msg {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #ff4d94;
+  padding: 12px 18px;
+  border-radius: 10px;
+  font-size: 14px;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: 0.3s;
+  z-index: 1000;
+}
+
+.msg.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.msg.error {
+  background: #ff4d4d;
+}
+
+.msg.success {
+  background: #28c76f;
+}

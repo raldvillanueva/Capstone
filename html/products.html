@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shop - SugarLoomPh</title>
+  <link rel="stylesheet" href="../css/products.css">
+  <script src="../js/products.js" defer></script>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+
+  <!-- LEFT (BACK BUTTON) -->
+  <div class="back-wrap" onclick="goBack()">
+    <span class="arrow"></span>
+    <h2 class="logo">Back</h2>
+  </div>
+
+  <!-- RIGHT (CART) -->
+  <div class="cart" onclick="goToCart()">
+    Cart <span id="cart">0</span>
+  </div>
+
+</nav>
+
+<!-- CATEGORY BAR -->
+<section class="categories">
+  <div class="cat active" onclick="filterProducts('all', this)">🍽️<p>All</p></div>
+  <div class="cat" onclick="filterProducts('cookie', this)">🍪<p>Cookies</p></div>
+  <div class="cat" onclick="filterProducts('brownie', this)">🍫<p>Brownies</p></div>
+  <div class="cat" onclick="filterProducts('cupcake', this)">🧁<p>Cupcakes</p></div>
+</section>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>All Products</h1>
+  <p>Freshly baked treats, same day delivery</p>
+</section>
+
+<!-- PRODUCTS -->
+<section class="products">
+  <div class="grid" id="product-list"></div>
+</section>
+
+</body>
+</html>
