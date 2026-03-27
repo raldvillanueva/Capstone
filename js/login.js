@@ -60,21 +60,21 @@ function login(){
 
 /* NAV */
 function goToRegister(){
-  window.location.href = "../pages/register.html";
+  window.location.href = "register.html";
 }
 
 function goToLogin(){
-  window.location.href = "../pages/login.html";
+  window.location.href = "login.html";
 }
 
 /* FORGOT */
 function forgotPassword(){
   showMsg("Redirecting...");
   setTimeout(()=>{
-    window.location.href = "../pages/forgot.html";
+    window.location.href = "forgot.html";
   }, 800);
 }
 
 function goBack(){
-  window.location.href = "../pages/homepage.html";
+  window.location.href = "homepage.html";
 }

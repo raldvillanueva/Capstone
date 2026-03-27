@@ -57,11 +57,11 @@ function updateCart(){
 
 /* NAV */
 function goHome(){
-  window.location.href = "../pages/homepage.html";
+  window.location.href = "homepage.html";
 }
 
 function goToCart(){
-  window.location.href = "../pages/cart.html";
+  window.location.href = "cart.html";
 }
 
 function goBack(){

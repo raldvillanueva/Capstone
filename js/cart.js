@@ -74,15 +74,15 @@ function removeItem(i){
 }
 
 function goHome(){
-  window.location.href = "../pages/homepage.html";
+  window.location.href = "homepage.html";
 }
 
 function goToCheckout(){
-  window.location.href = "../pages/checkout.html";
+  window.location.href = "checkout.html";
 }
 
 function goBack(){
-  window.location.href = "../pages/homepage.html";
+  window.location.href = "homepage.html";
 }
 
 document.addEventListener("DOMContentLoaded", loadCart);

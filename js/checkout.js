@@ -40,11 +40,11 @@ function placeOrder(){
   alert("Order placed successfully! 🎉");
 
   localStorage.removeItem("cart");
-  window.location.href = "../pages/homepage.html";
+  window.location.href = "homepage.html";
 }
 
 function goBack(){
-  window.location.href = "../pages/cart.html";
+  window.location.href = "cart.html";
 }
 
 function showMsg(text, type="error"){
@@ -102,7 +102,7 @@ function placeOrder(){
   localStorage.removeItem("cart");
 
   setTimeout(()=>{
-    window.location.href = "../pages/homepage.html";
+    window.location.href = "homepage.html";
   }, 2000);
 }
 

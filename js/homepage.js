@@ -53,15 +53,15 @@ function updateCartCount(){
 updateCartCount();
 
 function goToShop(){
-  window.location.href = "../pages/products.html";
+  window.location.href = "products.html";
 }
 
 function goToCart(){
-  window.location.href = "../pages/cart.html";
+  window.location.href = "cart.html";
 }
 
 function goToLogin(){
-  window.location.href = "../pages/login.html";
+  window.location.href = "login.html";
 }
 
 function updateNavUser(){
