@@ -82,7 +82,7 @@ function goToCheckout(){
 }
 
 function goBack(){
-  window.history.back();
+  window.location.href = "../pages/homepage.html";
 }
 
 document.addEventListener("DOMContentLoaded", loadCart);

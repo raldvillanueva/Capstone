@@ -60,4 +60,28 @@ function goToCart(){
   window.location.href = "../pages/cart.html";
 }
 
+function goToLogin(){
+  window.location.href = "../pages/login.html";
+}
+
+function updateNavUser(){
+  const nav = document.getElementById("nav-actions");
+  let loggedIn = localStorage.getItem("loggedIn");
+
+  if(loggedIn === "true"){
+    nav.innerHTML = `
+      <div class="user-icon" onclick="logout()">👤</div>
+    `;
+  }
+}
+
+function logout(){
+  localStorage.removeItem("loggedIn");
+  location.reload();
+}
+
+/* RUN ON LOAD */
+document.addEventListener("DOMContentLoaded", updateNavUser);
+
+
 render();

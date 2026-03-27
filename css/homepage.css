@@ -177,3 +177,44 @@ footer {
   padding: 20px;
   background: black;
 }
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  row-gap: 20px;
+}
+
+.btn-outline {
+  padding: 8px 18px;
+  border: 1px solid rgba(255, 77, 148, 0.6);
+  background: rgba(255, 77, 148, 0.08);
+  color: #ff4d94;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-weight: 500;
+  backdrop-filter: blur(8px);
+}
+
+/* 🔥 HOVER EFFECT */
+.btn-outline:hover {
+  background: linear-gradient(135deg,#ff4d94,#ff758c);
+  color: white;
+  border: 1px solid transparent;
+  box-shadow: 0 8px 20px rgba(255,77,148,0.4);
+  transform: translateY(-2px);
+}
+
+.user-icon {
+  font-size: 20px;
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 50%;
+  background: rgba(255,77,148,0.1);
+  transition: 0.3s;
+}
+
+.user-icon:hover {
+  background: #ff4d94;
+  transform: scale(1.1);
+}

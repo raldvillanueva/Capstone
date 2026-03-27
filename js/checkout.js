@@ -44,7 +44,7 @@ function placeOrder(){
 }
 
 function goBack(){
-  window.history.back();
+  window.location.href = "../pages/cart.html";
 }
 
 function showMsg(text, type="error"){
